@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FPT</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <!-- Archivos locales -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Librerías externas -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"> Equipo FPT</div>
+            <div class="logo">Equipo FPT</div>
             <ul class="nav-links">
                 <li><a href="#carrusel">Inicio</a></li>
                 <li><a href="#planes">Planes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#Footer">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -24,8 +25,12 @@
     <section id="carrusel">
         <div class="slider">
             <img src="assests/imagenes/cambio.jpg" alt="Antes y Después" class="active">
+            <img src="assests/imagenes/pablo.jpg" alt="Antes y Después">
+            <!-- Flechas de navegación sin onclick -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
         </div>
-    </section>
+    </section> 
     
     <section id="planes">
         <h2>Nuestros Planes</h2>
@@ -36,13 +41,16 @@
         </div>
     </section>
     
-    <footer>
+    <footer id="Footer">
         <div class="social-icons">
             <a href="https://www.instagram.com/equipo_fpt/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100083090420251" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
         <p class="designer">Designed by Ignacio Amaya</p>
     </footer>
-    
+
+    <!-- Scripts locales -->
+    <script defer src="script/firebase-config.js"></script>
+    <script defer src="script/script.js"></script>
 </body>
 </html>

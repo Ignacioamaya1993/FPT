@@ -147,3 +147,55 @@ footer .designer {
     color: #aaa;
     font-style: italic;
 }
+
+/* --- Carrusel --- */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    display: flex;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 1s ease-in-out;
+    flex-shrink: 0;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+/* Estilo de las flechas */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    opacity: 1;
+    transition: background 0.3s ease;
+    z-index: 100; /* Asegura que las flechas estén sobre las imágenes */
+}
+
+.prev:hover, .next:hover {
+    background: rgba(255, 115, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
